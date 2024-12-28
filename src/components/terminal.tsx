@@ -8,8 +8,8 @@ const Terminal = React.forwardRef<HTMLDivElement, React.ComponentProps<"div">>(
       <Card
         ref={ref}
         {...props}
-        className={cn(className, "rounded-md border-card")}
-      ></Card>
+        className={cn(className, "rounded-md border")}
+      />
     );
   }
 );

@@ -1,50 +1,41 @@
-# React + TypeScript + Vite
+# Code Editor
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A Simple Online Code Editor
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [x] Code Editing
+- [x] Code Execution
+- [x] Code Preview
+- [ ] View File System
+- [ ] Save Files
+- [ ] Load Files
+- [ ] Add files
+- [ ] Delete files
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React JS (Frontend Framework)
+- Vite  (Build Tool)
+- Tailwind CSS (Styling)
+- Monaco Editor (Code Editor)
+- xterm (Terminal)
 
-- Configure the top-level `parserOptions` property like this:
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## How to run
+
+```bash
+git clone https://github.com/Ikuzweshema/code-editor.git
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+```bash
+cd code-editor
 ```
+
+```bash
+pnpm install
+```
+```bash
+pnpm run dev
+```
+Open [localhost](http://localhost:5173) to view it in the browser.

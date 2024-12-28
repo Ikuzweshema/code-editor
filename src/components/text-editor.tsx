@@ -1,17 +1,19 @@
-import { ChangeEvent } from "react";
-import { Textarea } from "../components/textarea.tsx";
+import Editor from "@monaco-editor/react";
 
 interface Props {
   text: string;
-  handleChange: (e: ChangeEvent<HTMLTextAreaElement>) => void;
+  handleChange: (text: string | undefined) => void;
 }
-export default function Editor({ handleChange, text }: Props) {
+export default function TextEditor({ handleChange, text }: Props) {
   return (
-    <div className={"flex h-full w-full rounded-md p-3 border-card"}>
-      <Textarea
-        value={text}
+    <div className={"flex h-full w-full rounded-sm"}>
+      <Editor
+        defaultLanguage="javascript"
         onChange={handleChange}
-        className={"resize-none h-full w-full"}
+        defaultValue={text}
+        className="w-full h-full"
+        theme="vs-dark"
+
       />
     </div>
   );
