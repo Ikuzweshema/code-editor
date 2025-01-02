@@ -10,8 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@monaco-editor/react": "^4.6.0",
+    "@fontsource/ubuntu": "^5.1.1",
     "@radix-ui/react-select": "^2.1.4",
+    "@radix-ui/react-separator": "^1.1.1",
     "@radix-ui/react-slot": "^1.1.1",
     "@webcontainer/api": "1.5.1-internal.5",
     "@xterm/addon-fit": "^0.10.0",

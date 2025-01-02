@@ -16,6 +16,7 @@ dist-ssr
 .vscode/*
 !.vscode/extensions.json
 .idea
+.gitpod.yml
 .DS_Store
 *.suo
 *.ntvs*
@@ -23,3 +24,4 @@ dist-ssr
 *.sln
 *.sw?
 !/src/app.tsx
+

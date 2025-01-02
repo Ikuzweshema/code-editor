@@ -6,10 +6,11 @@ const Terminal = React.forwardRef<HTMLDivElement, React.ComponentProps<"div">>(
   ({ className, ...props }, ref) => {
     return (
       <Card
-        ref={ref}
         {...props}
-        className={cn(className, "rounded-md border")}
-      />
+        className={cn(className, "rounded-md w-full p-0 overflow-hidden m-0")}
+      >
+        <div ref={ref} className="w-full h-36 p-0 m-0" />
+      </Card>
     );
   }
 );
